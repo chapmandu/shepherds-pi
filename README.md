@@ -2,7 +2,9 @@
 
 A live map of what [pi](https://github.com/earendil-works/pi) is doing, in a panel of the [Herdr app](https://herdr.dev). Every tool call sends packets from pi to a station: files, shell, network, memory, skills, subagents. You see the agent at work instead of reading a list of commands.
 
-![The panel during a session](preview.png)
+![Shepherd's Pi during a session: packets fly from pi to its stations, and the agent's thinking and calls fill the activity](docs/demo.gif)
+
+<sub>A made-up session, about shepherd's pies and a herd of sheep. [Video (MP4)](docs/demo.mp4).</sub>
 
 ## Install
 
@@ -112,7 +114,7 @@ package.json      makes the repository a pi package
 - `npm test` runs every test: how calls are sorted, the clean-up of old recordings, that only the main session writes, how the panel is copied into Herdr, and the panel itself drawn with a sample session.
 - `herdr-app check ~/.config/herdr-app/mods/shepherds-pi` draws the panel once with no data; look at the panel too.
 - With `./install.sh`, the panel is a copy: run it again after editing. Herdr does not reload a linked mod folder.
-- `docs/demo-board.mjs` draws a fictional, busy session for retaking `preview.png`; see the notes at its top.
+- `docs/record-demo.sh <terminal>` records `docs/demo.gif`, `docs/demo.mp4` and `preview.png` from a fictional, busy session (`docs/demo-board.mjs`), and puts your theme and picture back afterwards.
 - To show your own picture as You, put it at `~/.config/herdr-app/mods/shepherds-pi/avatar.png`.
 
 ## Limits

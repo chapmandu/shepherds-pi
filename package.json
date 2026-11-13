@@ -6,9 +6,19 @@
   "license": "MIT",
   "author": "Adam Chapman",
   "repository": "github:chapmandu/shepherds-pi",
-  "keywords": ["pi-package", "herdr-mod", "herdr", "visualization", "activity"],
+  "keywords": [
+    "pi-package",
+    "herdr-mod",
+    "herdr",
+    "visualization",
+    "activity"
+  ],
   "pi": {
-    "extensions": ["./extension/index.ts"]
+    "extensions": [
+      "./extension/index.ts"
+    ],
+    "image": "https://raw.githubusercontent.com/chapmandu/shepherds-pi/main/preview.png",
+    "video": "https://raw.githubusercontent.com/chapmandu/shepherds-pi/main/docs/demo.mp4"
   },
   "peerDependencies": {
     "@earendil-works/pi-coding-agent": "*"

@@ -14,7 +14,7 @@ extension/        pi extension (TypeScript, loaded by pi through package.json "p
 mods/shepherds-pi/  Herdr app panel (plain JavaScript on gpui-kit, no build step)
   main.js           reads the file of the focused terminal and draws the map and the activity
   icons/            station icons: 16×16, stroke 1.5, round caps, currentColor
-docs/             demo-board.mjs and demo-avatar.svg, for retaking preview.png
+docs/             the demo GIF and video, and the fictional session that records them (record-demo.sh)
 ```
 
 The file's shape is the `Board` type in `extension/index.ts`. Change both sides together, and keep the panel working with older files: a field may be missing.
@@ -71,7 +71,7 @@ The panel (see `~/.config/herdr-app/AGENTS.md` and the `.d.ts` files there for t
 
 - Raise `version` in `package.json` for every release: the extension re-copies the panel into Herdr when the version changes.
 - `pi install git:github.com/chapmandu/shepherds-pi` installs from the default branch.
-- To retake `preview.png`, follow the notes at the top of `docs/demo-board.mjs`. Never publish a screenshot of a real session: it shows your files, thinking and picture.
+- After a visible change, run `docs/record-demo.sh <terminal>` with the panel open: it plays the fictional session in `docs/demo-board.mjs` and writes `docs/demo.gif` (README), `docs/demo.mp4` (pi gallery) and `preview.png` (herdr.dev). It puts your theme, picture and files back when it ends. Never publish a screenshot of a real session: it shows your files, thinking and picture.
 
 ## Writing
 
