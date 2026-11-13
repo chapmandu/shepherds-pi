@@ -1,0 +1,19 @@
+{
+  "name": "shepherds-pi",
+  "version": "0.1.0",
+  "description": "A live map of what pi is doing, in a panel of the Herdr app: tool calls fly as packets between the agent and its stations.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Adam Chapman",
+  "repository": "github:chapmandu/shepherds-pi",
+  "keywords": ["pi-package", "herdr-mod", "herdr", "visualization", "activity"],
+  "pi": {
+    "extensions": ["./extension/index.ts"]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "test": "node --experimental-strip-types extension/classify.test.ts && node --experimental-strip-types extension/prune.test.ts && node --experimental-strip-types extension/owner.test.ts && node --experimental-strip-types extension/mod.test.ts && node mods/shepherds-pi.test.mjs"
+  }
+}
